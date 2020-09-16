@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Typogrophy */
+
+h1, h2 {
+    
+    font-family: 'Frank Ruhl Libre', sans-serif;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+a {
+
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 15px;
+}
+
+header {
+
+    
+}
