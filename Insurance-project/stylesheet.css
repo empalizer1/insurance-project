@@ -155,17 +155,13 @@ a {
 
 .menu-list {
 
-    background-color: coral;
     display: flex;
+    padding-left: 0;
     list-style: none;
-    width: 180px;
     justify-content: space-between;
 }
 
 .menu-item {
 
-    margin: 0 15px;
-    float: left;
-    display: block;
-    text-align: center;
+    margin: 0 50px;
 }
