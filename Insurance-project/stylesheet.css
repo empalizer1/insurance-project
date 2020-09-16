@@ -1,5 +1,6 @@
 * {	
-	box-sizing: border-box;
+
+    box-sizing: border-box;
 }
     
 /* Typography */
@@ -20,33 +21,36 @@ h4, .paragraph, .button {
 	
 header {
 	
-	display: flex;
-	height: 544px;
-	width: 1000px;
+    display: flex;
+    height: 544px;
+    width: 1000px;
 }
 	
 /* Left container  */
 	
 .left {
 	
-	display: flex;
-	background-color: #C7DDEA;
+    display: flex;
+    background-color: #C7DDEA;
 }
 
 .blue-box {
+
     position: relative;
     display: flex;
     justify-content: center;
 }
 
 div {
+
     z-index: 1;
     position: relative;
     width: 70%;
 }
 	
 .white-text {
-	color: #ffffff;
+
+    color: #ffffff;
 }
 
 .button {
@@ -73,36 +77,36 @@ div {
     height: 100%;
 }
 
-	/* Right container */
+/* Right container */
 	
 .right {
 	
-	font-style: none;
+    font-style: none;
 }
 	
 .red-box {
 	
-	background-color: #F17949;
+    background-color: #F17949;
     height: 50%;
 }
     
 .yellow-box {
 	
-	background-color: #FAB131;
-	height: 50%;
+    background-color: #FAB131;
+    height: 50%;
 }
 	
 	
 p {
 	
-	font-family: 'Frank Ruhl Libre', serif;
-	font-size: 24px;
-	margin: 0;
-	font-style: none;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 24px;
+    margin: 0;
+    font-style: none;
 }
 	
 .family img {
 	
-	width: 286px;
-	height: 279px;
+    width: 286px;
+    height: 279px;
 }
