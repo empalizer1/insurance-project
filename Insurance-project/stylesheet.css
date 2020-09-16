@@ -8,12 +8,25 @@ h1 {
 	
     font-family: 'Frank Ruhl Libre', serif;
     font-size: 45px;
+    width: 314px;
+    height: 101px;
+}
+
+h4 {
+    color: rgba(0, 0, 0, 0.6);    
 }
         
-h4, .paragraph, .button {
+h4, .paragraph, .button, a {
         
     font-family: 'Fira Sans', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.paragraph {
+
+    width: 268px;
+    line-height: 1.5;
 }
 
 .white-text {
@@ -24,6 +37,13 @@ h4, .paragraph, .button {
 /* Header */
 
 header {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
 
     display: flex;
     height: 544px;
@@ -45,7 +65,7 @@ header {
     justify-content: center;
 }
 
-div {
+.wrapper {
 
     z-index: 1;
     position: relative;
@@ -76,6 +96,12 @@ h1 {
     z-index: 0;
 }
 
+img {
+
+    width: 290px;
+    height: 280px;
+}
+
 /* Right container */
 
 .left, .right {
@@ -84,19 +110,62 @@ h1 {
     height: 100%;
 }
 
-.right {
+.red-box, .yellow-box {
 
-    font-style: none;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+
+    text-decoration: none;
+    color: black;
 }
 
 .red-box {
 
     background-color: #F17949;
-    height: 50%;
 }
 
 .yellow-box {
 
     background-color: #FAB131;
-    height: 50%;
+}
+
+.title {
+
+    font-size: 32px;
+    font-family: 'Frank Ruhl Libre', sans-serif;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+    line-height: 35px;
+}
+
+.paragraph {
+
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 700;
+    margin: 0;
+}
+
+.menu-list {
+
+    background-color: coral;
+    display: flex;
+    list-style: none;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.menu-item {
+
+    margin: 0 15px;
+    float: left;
+    display: block;
+    text-align: center;
 }
