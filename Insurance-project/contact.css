@@ -11,13 +11,142 @@ h1, h2 {
     font-weight: 900;
 }
 
-a {
+a, label, textarea, .button {
 
     font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
+    text-decoration: none;
+    color: black;
 }
+
+a, .button {
+
+    font-weight: 700;
+}
+
+h2 {
+
+    color: #ffffff;
+    display: block;
+
+}
+
+/* Header */
 
 header {
 
-    
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container {
+
+    display: flex;
+    height: 340px;
+    width: 1000px;
+    background-color: #C7DDEA;
+}
+
+.header-text {
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hello {
+
+    display: block;
+    margin-bottom: 80px;
+}
+
+.photo {
+
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+}
+
+ /* Menu */
+
+nav ul {
+
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul li {
+
+    margin: 0 60px;
+}
+
+/* Grey/contact form */
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+
+    display: flex;
+    width: 1000px;
+    height: 544px;
+    background-color: #A9A19E;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+/* Form */
+
+form {
+
+    display: flex;
+    flex-direction: column;
+    margin: 57px 0 0 70px;
+}
+
+label  {
+
+    padding: 0;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.507);
+    line-height: 1;
+}
+
+input {
+
+    border: none;
+    width: 334px;
+    height: 40px;
+    resize: vertical;
+}
+
+textarea {
+
+    border: none;
+    width: 334px;
+    height: 166px;
+}
+
+.button {
+
+    border-radius: 20px;
+    border: solid 0px #ffffff;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 0px 0px rgb(0 0 0 / 15%);
+    width: 130px;
+    height: 40px;
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-top: 20px;
 }
