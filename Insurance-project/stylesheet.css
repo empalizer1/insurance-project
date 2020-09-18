@@ -1,5 +1,6 @@
 * {	
-	box-sizing: border-box;
+
+    box-sizing: border-box;
 }
     
 /* Typography */
@@ -8,16 +9,15 @@ h1 {
 	
     font-family: 'Frank Ruhl Libre', serif;
     font-size: 45px;
-    font-weight: 900;
     width: 314px;
-    height: 101px;
+    margin-bottom: auto;
 }
 
 h4 {
     color: rgba(0, 0, 0, 0.6);    
 }
         
-h4, .paragraph, .button, a {
+h4, .paragraph, a {
         
     font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
@@ -63,7 +63,7 @@ header {
     align-items: center;
 }
 
-.container {
+.head-container {
 
     display: flex;
     height: 544px;
@@ -104,6 +104,8 @@ header {
     border: solid 0px #ffffff;
     background-color: #ffffff;
     box-shadow: 0px 3px 0px 0px rgb(0 0 0 / 15%);
+    font-family: 'Fira Sans';
+    font-weight: bold; 
     width: 130px;
     height: 40px;
 }
@@ -161,22 +163,303 @@ nav ul li {
     margin: 0 50px;
 }
 
-/* Main Part */
+/* Main Part - Sara */
 
-/* .container {
+.container-main {
 
     display:flex;
-    flex-wrap: wrap;  /* flex-wrap gör att när en hemsida blir mindre så ändrar flexboxen postion*/
-    /* justify-content: center;
-    height: auto;  */
-    /* background-color: black 50% , red 50%;
-    width: 1200px;
-    margin:0px 185px; */ 
+    justify-content: center;
+    padding: 90px;
+}  
 
 /*för div elementet med allting i sig.*/
 
-.box-2colors {
+.box-2colors { /*använder man width:1000px; blir det inget flow ( att inneholet flyttar undansig när skärmen blir mindre)*/
+    
+    margin:0 auto;
+    width: 1000px;
+    background: linear-gradient(to bottom, #A8A19E 50%, #f9b10b 50%);  
+}
 
-    margin:0px 220px;     /*använder man 1000px blir det inget flow ( att inneholet flyttar undansig när skärmen blir mindre)*/
-    background:linear-gradient(to bottom, #A8A19E 50%, #f9b10b 50%);
+
+/*box 1, white*/
+
+div.papper {
+
+    background-color:white;
+    text-align: center;
+    width: 260px;
+    height: 310px;
+    margin: 35px 10px;
+    border-radius: 5px;
+    box-shadow: 0 3px 3px 0 #3534348f;
+}
+
+/*p text till 3 bild flexboxes*/
+
+.papper-text {
+
+    margin: 0;
+    padding: 0 6px;
+    text-align: center;
+    color: #313131d0;
+    font-family: 'Fira Sans';
+    font-size: 12px;
+    
+}
+
+
+/*box 2 */
+.flexbox-box2 {
+
+    margin: -15px 5.5% 0px;
+    height: 140px;
+    border-radius: 5px;
+}
+
+/*alla 3 bild boxarna. child,adult,old*/
+
+.child, .adult, .old {
+
+    object-fit: scale-down;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.child {
+
+    background-color:#c6dde9;
+}
+
+.adult {
+
+    background-color:#f9b131;
+}
+
+.old{
+
+    background-color:#f07949;
+}
+/*slutet av alla 3 bild boxarna. child,adult,old*/
+
+/*övrigt på sidan*/
+
+
+/* ---*/
+
+.flex {
+
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.flexbox-container-1 {  /*första rubtiken och texten på sidan. innan 3 bilder*/
+    
+    padding:20px 0px  ;
+    align-items: baseline;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.flexbox-container-2 { /* andra texten på sidan. under 3 bilder*/
+    
+    display:flex;
+    margin-top: 30px;
+    justify-content: center;   
+}
+
+.flexbox-item {
+
+    margin: 0px 50px 37px 70px;
+}
+
+.flexbox-headline-1 {  /* första headline på dubble färg delen*/
+   
+    color:white;
+    margin-bottom: 40px;
+}
+
+.flexbox-headline-2 { /* andra headline på dubble färg delen"*/
+    
+    margin-left: 350px;
+    display: flex;
+    justify-content: center;
+    color:white;
+}
+
+.flexbox-text-1 { /*första texten på dubble färg delen*/
+
+   text-align: left;
+   font-size: 15px;
+   font-family: 'Fira Sans';
+   font-weight: 500;
+   color: #242424;
+   width: 270px;
+}
+
+.flexbox-text-2 { /*andra texten på dubble färg delen*/
+    
+    margin: 10px 0 10% 0px;
+    width: 500px;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Fira Sans'; /*fix font family*/
+    color:#242424;
+ }
+
+ /* Rimsha - FOOTER */
+
+.container-footer {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;  
+    width: 334px;
+    height: 340px;  
+}
+
+.flexbox-box, .flexbox1, .flexbox2, .flexbox3, .flexbox4, .flexbox5 {
+
+    width: 334px;
+    height: 340px;
+    padding: 10px;   
+}
+
+.flexbox, .flexbox1, .flexbox2 {
+
+    grid-row-end: 1;
+}
+
+.flexbox3, .flexbox4, .flexbox5 {
+
+    grid-row-end: 2; 
+}
+
+.flexbox-box {
+
+    grid-column-start:1 ;
+    background-color:#C7DDEA ;
+    left: 219px;      
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Frank Ruhl Libre';
+    font-size: 45px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.flexbox1 {
+
+    grid-column-start: 2;
+    background-color:#FFFFFF;   
+}
+
+.top-number1, .top-number2, .top-number3, .top-number4, .top-number5 {
+    
+    color: grey;
+    align-items: flex-start;
+    justify-content: center;     
+}
+
+.text1, .text2, .text3, .text4, .text4, .text5 {
+
+    color: black;
+    font-family: 'Fira Sans';
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    padding: 45px;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.flexbox2 {
+
+    grid-column-start:3;
+    background-color: #EBEBEB;
+}
+
+
+.flexbox3 {
+
+   grid-column-start: 1; 
+   background-color: #ffffff;
+}
+
+.flexbox4 {
+
+    grid-column-start: 2;
+    background-color: #f17949;
+}
+
+.flexbox5 {
+
+    grid-column-start: 3;
+    background-color: #FFFFFF;   
+}
+
+
+.container-flex {
+
+    display: flex;
+    justify-content: center;
+    background-color: #a9a19e;
+    width: 1000px;
+    height: 68px;
+}
+
+ #btnScrollToTop {
+
+     right: 10px;
+     bottom: 10px;
+     width: 150px;
+     height: 25px;
+     background: #a9a19e;
+
+}
+
+ .arrow {
+
+     border: solid black;
+     border-width: 0 3px 3px 0;
+     display: inline-block;
+     padding: 3px;
+ }
+
+ .up {
+
+     transform: rotate(45deg);
+     -webkit-transform: rotate(-135deg);
+}
+
+.p {
+
+    font-family: 'Fira Sans';
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px
+}
+
+footer {
+    
+    height: 340px;
+    background-color: #A9A19E;
+}
+
+footer nav {
+
+    background-color: 777574;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+
 }
