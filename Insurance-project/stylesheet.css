@@ -160,3 +160,23 @@ nav ul li {
 
     margin: 0 50px;
 }
+
+/* Main Part */
+
+/* .container {
+
+    display:flex;
+    flex-wrap: wrap;  /* flex-wrap gör att när en hemsida blir mindre så ändrar flexboxen postion*/
+    /* justify-content: center;
+    height: auto;  */
+    /* background-color: black 50% , red 50%;
+    width: 1200px;
+    margin:0px 185px; */ 
+
+/*för div elementet med allting i sig.*/
+
+.box-2colors {
+
+    margin:0px 220px;     /*använder man 1000px blir det inget flow ( att inneholet flyttar undansig när skärmen blir mindre)*/
+    background:linear-gradient(to bottom, #A8A19E 50%, #f9b10b 50%);
+}
