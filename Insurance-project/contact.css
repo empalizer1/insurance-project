@@ -4,14 +4,14 @@
 
 /* Typogrophy */
 
-h1, h2 {
+h1, h2, .visit {
     
     font-family: 'Frank Ruhl Libre', sans-serif;
     font-size: 45px;
     font-weight: 900;
 }
 
-a, label, textarea, .button {
+a, label, textarea, .button, .street, .town {
 
     font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
@@ -21,14 +21,18 @@ a, label, textarea, .button {
 
 a, .button {
 
-    font-weight: 700;
+    font-weight: 400;
 }
 
-h2 {
+h2, .visit {
 
     color: #ffffff;
     display: block;
+}
 
+.street, .town {
+
+    color: #ffffff;
 }
 
 /* Header */
@@ -115,12 +119,15 @@ form {
     margin: 57px 0 0 70px;
 }
 
+.email {
+    margin-top: 0;
+}
+
 label  {
 
-    padding: 0;
     display: inline-block;
+    margin: 10px 0;
     color: rgba(255, 255, 255, 0.507);
-    line-height: 1;
 }
 
 input {
@@ -149,4 +156,19 @@ textarea {
     align-self: flex-end;
     justify-self: flex-end;
     margin-top: 20px;
+}
+
+/* Map */
+
+.map {
+
+    width: 1000px;
+    height: 340px;
+}
+
+.yellow-box {
+
+    width: 325px;
+    height: 210px;
+    background-color: #FAB131;
 }
