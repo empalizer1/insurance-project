@@ -2,8 +2,10 @@
 
     box-sizing: border-box;
 }
-    
-/* Typography */
+
+body {
+    margin:0;
+}
 
 h1 {
 	
@@ -14,10 +16,10 @@ h1 {
 }
 
 h4 {
-    color: rgba(0, 0, 0, 0.6);    
+    color: #0000007e;  
 }
         
-h4, .paragraph, a {
+h4, .paragraph, a, .button {
         
     font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
@@ -28,7 +30,7 @@ h4, .paragraph, a {
 
     width: 268px;
     line-height: 1.5;
-    color: rgba(0, 0, 0, 0.5);
+    color: r#0000007e;
     font-weight: 700;
     margin: 0;
 }
@@ -54,7 +56,6 @@ a {
     color: black;
 }
 	
-/* Header */
 
 header {
 
@@ -68,9 +69,8 @@ header {
     display: flex;
     height: 544px;
     width: 1000px;
+    max-width: 100%;
 }
-
-/* Left container  */
 
 .left, .right {
 
@@ -104,7 +104,6 @@ header {
     border: solid 0px #ffffff;
     background-color: #ffffff;
     box-shadow: 0px 3px 0px 0px rgb(0 0 0 / 15%);
-    font-family: 'Fira Sans';
     font-weight: bold; 
     width: 130px;
     height: 40px;
@@ -123,9 +122,6 @@ img {
     width: 290px;
     height: 280px;
 }
-
-/* Right container */
-
 
 .red-box, .yellow-box {
 
@@ -148,8 +144,6 @@ img {
     background-color: #FAB131;
 }
 
-/* Menu */
-
 nav ul {
 
     display: flex;
@@ -167,22 +161,18 @@ nav ul li {
 
 .container-main {
 
-    display:flex;
+    display: flex;
     justify-content: center;
-    padding: 90px;
+    padding: 30px;
 }  
 
-/*för div elementet med allting i sig.*/
+.box-2colors {  
 
-.box-2colors { /*använder man width:1000px; blir det inget flow ( att inneholet flyttar undansig när skärmen blir mindre)*/
-    
-    margin:0 auto;
+    margin: 0 auto;
     width: 1000px;
+    max-width: 100%;
     background: linear-gradient(to bottom, #A8A19E 50%, #f9b10b 50%);  
 }
-
-
-/*box 1, white*/
 
 div.papper {
 
@@ -195,21 +185,22 @@ div.papper {
     box-shadow: 0 3px 3px 0 #3534348f;
 }
 
-/*p text till 3 bild flexboxes*/
 
 .papper-text {
 
     margin: 0;
     padding: 0 6px;
     text-align: center;
-    color: #313131d0;
+    color: #00000066;
     font-family: 'Fira Sans';
-    font-size: 12px;
-    
+    font-size: 12px;   
 }
 
+.papper.h4 {
 
-/*box 2 */
+    color: #000000bd;
+}
+
 .flexbox-box2 {
 
     margin: -15px 5.5% 0px;
@@ -217,13 +208,19 @@ div.papper {
     border-radius: 5px;
 }
 
-/*alla 3 bild boxarna. child,adult,old*/
+img.child, img.adult, img.old {
+
+    margin-top: 14px;
+    width: 85px;
+    object-position: top;
+}
 
 .child, .adult, .old {
 
     object-fit: scale-down;
     max-width: 100%;
-    max-height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .child {
@@ -240,47 +237,42 @@ div.papper {
 
     background-color:#f07949;
 }
-/*slutet av alla 3 bild boxarna. child,adult,old*/
-
-/*övrigt på sidan*/
-
-
-/* ---*/
 
 .flex {
 
     margin: 0 auto;
     width: 1000px;
+    height: 680px;
 }
 
-.flexbox-container-1 {  /*första rubtiken och texten på sidan. innan 3 bilder*/
+.flexbox-container-1 {
     
-    padding:20px 0px  ;
-    align-items: baseline;
-    display:flex;
-    flex-wrap:wrap;
+    padding: 90px 0px 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
-.flexbox-container-2 { /* andra texten på sidan. under 3 bilder*/
+.flexbox-container-2 {
     
-    display:flex;
+    display: flex;
     margin-top: 30px;
     justify-content: center;   
 }
 
 .flexbox-item {
 
-    margin: 0px 50px 37px 70px;
+    margin: 0px 135px 35px 70px;
 }
 
-.flexbox-headline-1 {  /* första headline på dubble färg delen*/
+.flexbox-headline-1 { 
    
     color:white;
     margin-bottom: 40px;
+    margin-top: 0px;
 }
 
-.flexbox-headline-2 { /* andra headline på dubble färg delen"*/
+.flexbox-headline-2 {
     
     margin-left: 350px;
     display: flex;
@@ -288,24 +280,24 @@ div.papper {
     color:white;
 }
 
-.flexbox-text-1 { /*första texten på dubble färg delen*/
+.flexbox-text-1 { 
 
    text-align: left;
-   font-size: 15px;
-   font-family: 'Fira Sans';
    font-weight: 500;
-   color: #242424;
+   color: #000000dc;
    width: 270px;
+   font-family: 'Fira Sans', sans-serif;
+   font-size: 15px;
 }
 
-.flexbox-text-2 { /*andra texten på dubble färg delen*/
+.flexbox-text-2 {
     
     margin: 10px 0 10% 0px;
     width: 500px;
     text-align: center;
+    color:#0000006e;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 15px;
-    font-family: 'Fira Sans'; /*fix font family*/
-    color:#242424;
  }
 
  /* Rimsha - FOOTER */
@@ -413,53 +405,126 @@ div.papper {
     height: 68px;
 }
 
- #btnScrollToTop {
-
-     right: 10px;
-     bottom: 10px;
-     width: 150px;
-     height: 25px;
-     background: #a9a19e;
-
-}
-
- .arrow {
-
-     border: solid black;
-     border-width: 0 3px 3px 0;
-     display: inline-block;
-     padding: 3px;
- }
-
- .up {
-
-     transform: rotate(45deg);
-     -webkit-transform: rotate(-135deg);
-}
-
 .p {
 
-    font-family: 'Fira Sans';
-    font-size: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px
 }
 
+ /* Emelie - footer */
+
 footer {
-    
-    height: 340px;
-    background-color: #A9A19E;
+
+    margin: 0 auto;
+    display: block;
+    background: #777574;
+    text-align: center;
+    height: 410px;
+    width: 1000px;
 }
 
-footer nav {
+footer a {
 
-    background-color: 777574;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
+    display: block;
+    background: #A9A19E;
+    height: 70px;
+}
 
+footer a span {
+
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    transform: rotate(-45deg);
+    margin: -15px;
+}
+
+p {
+
+    margin: 0px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    section.head-container {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    section.left {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    section.right {
+        height: 500px;
+        width: 100%;
+    }
+    nav {
+        display: none;
+    }
+    .flexbox-container-1 {
+        justify-content: left;
+        padding: 50px 10%;
+        flex-direction: column;
+    }
+    
+    .flexbox-item {
+        margin: 0px;
+        margin-bottom: 35px;
+    }
+    
+    .container-main {
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+    
+    .papper {
+        width: 100%;
+    }
+    
+    div.papper {
+        width: 100%;
+    }
+    
+    .box-2colors {
+        background: #A8A19E;
+    }
+    .aboutUs {
+        background: #f9b10b;
+        padding-top: 25px;
+    }
+    h1.flexbox-headline-2 {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    p.flexbox-text-2 {
+        padding: 0px 30px;
+    }
+    
+    section.flex {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .container-footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .flexbox-box, .flexbox1, .flexbox2, .flexbox3, .flexbox4, .flexbox5 {
+        width: 100%;
+        height: 250px;
+    }
+    
+    footer {
+        max-width: 100%;
+    }
 }
